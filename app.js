@@ -144,7 +144,7 @@ app.get("/about", function(req, res){
 // start the app
 // make it so that we can both run locally and on Heroku
 let port = process.env.PORT;
-if (port == null \\ port == "") {
+if (port == null || port == "") {
   port = 3000;
 }
 app.listen(port, function() {
